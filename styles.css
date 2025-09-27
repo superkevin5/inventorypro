@@ -643,6 +643,41 @@ h1, h2, h3, h4, h5, h6, p, span, div, a, button, input, textarea, select {
     border-color: var(--primary-color);
 }
 
+.featured-module {
+    background: white;
+    color: #333;
+    border: 2px solid #4f46e5;
+    box-shadow: 0 8px 25px rgba(79, 70, 229, 0.2);
+    position: relative;
+}
+
+.featured-module::before {
+    content: "FEATURED";
+    position: absolute;
+    top: -10px;
+    right: 15px;
+    background: #4f46e5;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.featured-module .module-icon {
+    background: var(--gradient-primary);
+    color: white;
+}
+
+.featured-module .module-features li {
+    color: #333;
+}
+
+.featured-module .module-features li::before {
+    color: #4f46e5;
+}
+
 .module-icon {
     width: 60px;
     height: 60px;
@@ -726,6 +761,60 @@ h1, h2, h3, h4, h5, h6, p, span, div, a, button, input, textarea, select {
     overflow: visible;
 }
 
+.pricing-highlight {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.highlight-badge {
+    background: linear-gradient(135deg, #10b981, #059669);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+.price-comparison {
+    text-align: center;
+    margin: 1rem 0;
+    padding: 1rem;
+    background: linear-gradient(135deg, #fef3c7, #fde68a);
+    border-radius: 8px;
+    border: 2px solid #f59e0b;
+}
+
+.competitor-price {
+    font-size: 0.9rem;
+    color: #92400e;
+    text-decoration: line-through;
+    margin-bottom: 0.5rem;
+}
+
+.savings-highlight {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #92400e;
+    background: #fbbf24;
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    display: inline-block;
+}
+
 .pricing::before {
     content: '';
     position: absolute;
@@ -800,16 +889,19 @@ h1, h2, h3, h4, h5, h6, p, span, div, a, button, input, textarea, select {
     color: white;
     padding: 0.75rem 1.5rem;
     border-radius: 25px;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     font-weight: 700;
     box-shadow: 0 5px 15px rgba(79, 70, 229, 0.3);
-    white-space: nowrap;
+    white-space: normal;
     overflow: visible;
     text-overflow: clip;
-    max-width: 200px;
+    max-width: 280px;
     margin: 0;
     text-align: center;
     z-index: 10;
+    line-height: 1.2;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .pricing-header h3 {
@@ -1583,6 +1675,13 @@ h1, h2, h3, h4, h5, h6, p, span, div, a, button, input, textarea, select {
 
     .pricing-card.featured {
         transform: none;
+    }
+    
+    .featured-badge {
+        font-size: 0.7rem;
+        padding: 0.5rem 1rem;
+        max-width: 250px;
+        top: -30px;
     }
 
     .contact-content {
