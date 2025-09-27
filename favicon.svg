@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <defs>
+    <!-- Primary gradient for supply chain theme -->
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e40af;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Market/Commerce gradient -->
+    <linearGradient id="marketGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#059669;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#047857;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Truck gradient -->
+    <linearGradient id="truckGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#dc2626;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#b91c1c;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Box gradient -->
+    <linearGradient id="boxGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d97706;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="32" height="32" fill="url(#primaryGrad)" rx="4"/>
+  
+  <!-- Supply chain flow lines -->
+  <path d="M4 16 L28 16" stroke="#ffffff" stroke-width="1" opacity="0.3"/>
+  <path d="M16 4 L16 28" stroke="#ffffff" stroke-width="1" opacity="0.3"/>
+  
+  <!-- Main warehouse/box (center) -->
+  <rect x="12" y="12" width="8" height="8" fill="url(#boxGrad)" rx="1"/>
+  <rect x="13" y="13" width="6" height="6" fill="#ffffff" opacity="0.9" rx="0.5"/>
+  
+  <!-- Market building (top) -->
+  <rect x="10" y="4" width="12" height="6" fill="url(#marketGrad)" rx="1"/>
+  <rect x="11" y="5" width="10" height="4" fill="#ffffff" opacity="0.9" rx="0.5"/>
+  <!-- Market windows -->
+  <rect x="12" y="6" width="2" height="2" fill="#059669"/>
+  <rect x="18" y="6" width="2" height="2" fill="#059669"/>
+  
+  <!-- Delivery truck (bottom) -->
+  <rect x="8" y="22" width="16" height="6" fill="url(#truckGrad)" rx="1"/>
+  <!-- Truck cabin -->
+  <rect x="8" y="22" width="6" height="4" fill="url(#truckGrad)"/>
+  <!-- Truck wheels -->
+  <circle cx="10" cy="28" r="1.5" fill="#1f2937"/>
+  <circle cx="22" cy="28" r="1.5" fill="#1f2937"/>
+  <!-- Truck windows -->
+  <rect x="9" y="23" width="4" height="2" fill="#ffffff" opacity="0.9"/>
+  
+  <!-- Supply boxes (left and right) -->
+  <rect x="2" y="14" width="6" height="4" fill="url(#boxGrad)" rx="0.5"/>
+  <rect x="24" y="14" width="6" height="4" fill="url(#boxGrad)" rx="0.5"/>
+  
+  <!-- Connection arrows -->
+  <path d="M8 16 L12 16" stroke="#ffffff" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <path d="M20 16 L24 16" stroke="#ffffff" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <path d="M16 10 L16 12" stroke="#ffffff" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <path d="M16 20 L16 22" stroke="#ffffff" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="4" markerHeight="3" refX="4" refY="1.5" orient="auto">
+      <polygon points="0 0, 4 1.5, 0 3" fill="#ffffff"/>
+    </marker>
+  </defs>
+  
+  <!-- Data flow indicators -->
+  <circle cx="14" cy="16" r="0.5" fill="#ffffff" opacity="0.8"/>
+  <circle cx="18" cy="16" r="0.5" fill="#ffffff" opacity="0.8"/>
+  <circle cx="16" cy="14" r="0.5" fill="#ffffff" opacity="0.8"/>
+  <circle cx="16" cy="18" r="0.5" fill="#ffffff" opacity="0.8"/>
+  
+  <!-- Subtle border -->
+  <rect x="0.5" y="0.5" width="31" height="31" fill="none" stroke="#ffffff" stroke-width="0.5" opacity="0.2" rx="3.5"/>
+</svg>
