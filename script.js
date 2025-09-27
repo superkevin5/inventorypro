@@ -85,15 +85,12 @@ function initContactForm() {
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
-            // Let the form submit naturally to FormSubmit
-            // Just show loading state and success message
-            
             // Get form data for validation
             const formData = new FormData(this);
             const data = Object.fromEntries(formData);
             
             // Validation
-            if (!data.name || !data.email || !data.company || !data.interest) {
+            if (!data.name || !data.email || !data.phone || !data.company || !data.interest) {
                 e.preventDefault();
                 showNotification('Please fill in all required fields.', 'error');
                 return;
@@ -113,25 +110,29 @@ function initContactForm() {
             submitBtn.textContent = 'Sending...';
             submitBtn.disabled = true;
 
-            // Submit to AWS Lambda function
+            // Submit to Formspree using fetch to avoid redirect
+            e.preventDefault();
             
-            // Replace this URL with your actual Lambda function URL
-            const lambdaUrl = 'YOUR_LAMBDA_FUNCTION_URL_HERE';
-            
-            fetch(lambdaUrl, {
+            fetch('https://formspree.io/f/mzzjdgnq', {
                 method: 'POST',
+                body: formData,
                 headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(data)
+                    'Accept': 'application/json'
+                }
             })
-            .then(response => response.json())
-            .then(result => {
-                if (result.success) {
-                    showNotification('Thank you for your message! We\'ll get back to you soon.', 'success');
-                    this.reset();
+            .then(response => {
+                if (response.ok) {
+                    // Show success message
+                    const successMessage = document.getElementById('success-message');
+                    if (successMessage) {
+                        successMessage.style.display = 'block';
+                        contactForm.style.display = 'none';
+                        successMessage.scrollIntoView({ behavior: 'smooth' });
+                    }
+                    // Reset form
+                    contactForm.reset();
                 } else {
-                    throw new Error(result.error || 'Failed to send message');
+                    throw new Error('Form submission failed');
                 }
             })
             .catch(error => {
@@ -139,6 +140,7 @@ function initContactForm() {
                 showNotification('There was an error sending your message. Please try again.', 'error');
             })
             .finally(() => {
+                // Reset button
                 submitBtn.textContent = originalText;
                 submitBtn.disabled = false;
             });
@@ -1386,21 +1388,58 @@ function initSalesDashboard() {
     }
 }
 
+// Check for success message from Formspree
+function checkForSuccessMessage() {
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('success') === 'true') {
+        const successMessage = document.getElementById('success-message');
+        const contactForm = document.getElementById('contactForm');
+        
+        if (successMessage && contactForm) {
+            // Hide the form and show success message
+            contactForm.style.display = 'none';
+            successMessage.style.display = 'block';
+            
+            // Scroll to success message
+            successMessage.scrollIntoView({ behavior: 'smooth' });
+            
+            // Clean up URL (remove success parameter)
+            const newUrl = window.location.pathname;
+            window.history.replaceState({}, document.title, newUrl);
+        }
+    }
+}
+
+// Form submission handling for Formspree
+document.addEventListener('DOMContentLoaded', function() {
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            console.log('Form submitted to Formspree');
+            
+            // Show loading state
+            const submitBtn = contactForm.querySelector('button[type="submit"]');
+            if (submitBtn) {
+                const originalText = submitBtn.textContent;
+                submitBtn.textContent = 'Sending...';
+                submitBtn.disabled = true;
+                
+                // Reset button after 3 seconds (in case of slow response)
+                setTimeout(() => {
+                    submitBtn.textContent = originalText;
+                    submitBtn.disabled = false;
+                }, 3000);
+            }
+        });
+    }
+});
+
 // Email Modal Functionality
 function initEmailModal() {
-    const contactForm = document.getElementById('contactForm');
     const emailModal = document.getElementById('emailModal');
     const closeModal = document.getElementById('closeModal');
     const cancelEmail = document.getElementById('cancelEmail');
     const emailForm = document.getElementById('emailForm');
-
-    // Handle contact form submission with Formspree
-    if (contactForm) {
-        contactForm.addEventListener('submit', (e) => {
-            // Let the form submit normally to Formspree
-            // The success message will be shown via URL parameter
-        });
-    }
 
     // Close modal functions
     function closeEmailModal() {
@@ -1517,25 +1556,3 @@ function showNotification(message, type = 'info') {
         }, 300);
     }, 4000);
 }
-
-// Check for success message from Formspree
-function checkForSuccessMessage() {
-    const urlParams = new URLSearchParams(window.location.search);
-    if (urlParams.get('success') === 'true') {
-        const successMessage = document.getElementById('success-message');
-        const contactForm = document.getElementById('contactForm');
-        
-        if (successMessage && contactForm) {
-            // Hide the form and show success message
-            contactForm.style.display = 'none';
-            successMessage.style.display = 'block';
-            
-            // Scroll to success message
-            successMessage.scrollIntoView({ behavior: 'smooth' });
-            
-            // Clean up URL (remove success parameter)
-            const newUrl = window.location.pathname;
-            window.history.replaceState({}, document.title, newUrl);
-        }
-    }
-} 

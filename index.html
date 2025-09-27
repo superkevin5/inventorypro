@@ -850,12 +850,11 @@
                         <h3>All-Inclusive Plan</h3>
                         <div class="price">
                             <span class="currency">$</span>
-                            <span class="amount">400</span>
+                            <span class="amount">200</span>
                             <span class="period">/month</span>
                         </div>
                         <div class="annual-savings">
-                            <span class="annual-price">$4,800/year</span>
-                            <span class="savings-text">Save $0 annually</span>
+                            <span class="annual-price">$2400/year</span>
                         </div>
                     </div>
                     <ul class="pricing-features">
@@ -884,30 +883,28 @@
                     <h2>Ready to Transform Your Inventory Management?</h2>
                     <p>Get in touch with our team to learn how Inventory Pro can streamline your operations and boost your bottom line.</p>
                      <div class="contact-methods">
-                         <div class="contact-method">
-                             <i class="fas fa-envelope"></i>
-                             <span>inventorypro55@gmail.com</span>
-                         </div>
+                       
                          <div class="contact-method">
                              <i class="fas fa-phone"></i>
                              <span>0450137057</span>
                          </div>
-                         <div class="contact-method">
-                             <i class="fas fa-map-marker-alt"></i>
-                             <span>50 walker St, Rhodes, NSW, 2138</span>
-                         </div>
                      </div>
                 </div>
                 <div class="contact-form">
-                    <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                    <form id="contactForm" action="https://formspree.io/f/mzzjdgnq" method="POST">
                         <input type="hidden" name="_subject" value="New Inventory Pro Contact Form Submission">
-                        <input type="hidden" name="_replyto" value="">
-                        <input type="hidden" name="_next" value="?success=true">
+                        <input type="hidden" name="_next" value="https://your-s3-bucket-url.s3-website-region.amazonaws.com/?success=true">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_captcha" value="false">
+                        
                         <div class="form-group">
                             <input type="text" id="name" name="name" placeholder="Full Name" required>
                         </div>
                         <div class="form-group">
                             <input type="email" id="email" name="email" placeholder="Email Address" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
                         </div>
                         <div class="form-group">
                             <input type="text" id="company" name="company" placeholder="Company Name" required>
@@ -924,7 +921,9 @@
                         <div class="form-group">
                             <textarea id="message" name="message" placeholder="Tell us about your inventory management needs..." rows="4"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <button type="submit" class="btn btn-primary">
+                            Send Message
+                        </button>
                     </form>
                     <div id="success-message" class="success-message" style="display: none;">
                         <i class="fas fa-check-circle"></i>
@@ -951,6 +950,10 @@
                     <div class="form-group">
                         <label for="modalEmail">Email Address *</label>
                         <input type="email" id="modalEmail" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="modalPhone">Phone Number *</label>
+                        <input type="tel" id="modalPhone" name="phone" required>
                     </div>
                     <div class="form-group">
                         <label for="modalCompany">Company Name</label>

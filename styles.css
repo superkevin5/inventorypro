@@ -3183,4 +3183,47 @@ html {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+/* Error Message Styles */
+.error-message {
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+    color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 1rem;
+    animation: slideInUp 0.5s ease-out;
+}
+
+.error-message i {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.error-message p {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* Button Loading State */
+.btn-loading {
+    display: none;
+}
+
+.btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.btn:disabled .btn-text {
+    display: none;
+}
+
+.btn:disabled .btn-loading {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
 } 
