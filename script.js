@@ -1117,9 +1117,9 @@ What specific process would you like help with?`
 4. Restart application
 
 **Contact Support:**
-• Email: support@inventorypro.com
-• Phone: +86-400-123-4567
-• Knowledge Base: help.inventorypro.com
+• Email: support@inventoryproapp.com.au
+• Phone: 0450137057
+• Knowledge Base: help.inventoryproapp.com.au
 
 What specific issue are you experiencing?`
         },
@@ -1429,6 +1429,19 @@ document.addEventListener('DOMContentLoaded', function() {
                     submitBtn.textContent = originalText;
                     submitBtn.disabled = false;
                 }, 3000);
+            }
+        });
+    }
+
+    // Request Demo nav button - auto-select "Request Demo" in contact form
+    const requestDemoNav = document.getElementById('request-demo-nav');
+    const interestSelect = document.getElementById('interest');
+    if (requestDemoNav && interestSelect) {
+        requestDemoNav.addEventListener('click', function(e) {
+            const interest = this.getAttribute('data-interest');
+            if (interest) {
+                interestSelect.value = interest;
+                interestSelect.dispatchEvent(new Event('change'));
             }
         });
     }
