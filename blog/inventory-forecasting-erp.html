@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Inventory Forecasting in ERP: Reduce Stockouts and Excess Inventory | Inventory Pro</title>
+    <meta name="description" content="A practical inventory forecasting workflow inside an ERP: demand signals, lead times, safety stock, inbound/outbound predictions, and how to convert forecasts into replenishment actions.">
+    <meta name="keywords" content="inventory forecasting, ERP forecasting, demand planning, safety stock, reorder point, inbound prediction, outbound prediction, inventory planning ERP">
+    <meta name="author" content="Inventory Pro">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="theme-color" content="#2563eb">
+
+    <link rel="canonical" href="https://inventoryproapp.com.au/blog/inventory-forecasting-erp.html">
+    <link rel="icon" type="image/png" href="../logo.png">
+    <link rel="apple-touch-icon" type="image/png" href="../logo.png">
+
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Inventory Pro">
+    <meta property="og:title" content="Inventory Forecasting in ERP: Reduce Stockouts and Excess Inventory">
+    <meta property="og:description" content="A practical forecasting workflow inside an ERP: signals, lead times, safety stock, and replenishment actions.">
+    <meta property="og:url" content="https://inventoryproapp.com.au/blog/inventory-forecasting-erp.html">
+    <meta property="og:image" content="https://inventoryproapp.com.au/logo.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Inventory Forecasting in ERP: Reduce Stockouts and Excess Inventory">
+    <meta name="twitter:description" content="A practical forecasting workflow inside an ERP: signals, lead times, safety stock, and replenishment actions.">
+    <meta name="twitter:image" content="https://inventoryproapp.com.au/logo.png">
+
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Inventory Forecasting in ERP: Reduce Stockouts and Excess Inventory",
+        "description": "A practical inventory forecasting workflow inside an ERP: demand signals, lead times, safety stock, inbound/outbound predictions, and how to convert forecasts into replenishment actions.",
+        "image": "https://inventoryproapp.com.au/logo.png",
+        "author": {
+            "@type": "Organization",
+            "name": "Inventory Pro",
+            "url": "https://inventoryproapp.com.au/"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Inventory Pro",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://inventoryproapp.com.au/logo.png"
+            }
+        },
+        "datePublished": "2026-08-05",
+        "dateModified": "2026-08-05",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://inventoryproapp.com.au/blog/inventory-forecasting-erp.html"
+        }
+    }
+    </script>
+</head>
+<body class="blog-page">
+    <nav class="navbar">
+        <div class="nav-container">
+            <a class="nav-logo" href="../index.html">
+                <img src="../logo.png" alt="Inventory Pro Logo" class="nav-logo-img">
+                <span>Inventory Pro</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="../index.html#home">Home</a></li>
+                <li><a href="../index.html#features">Features</a></li>
+                <li><a href="../index.html#modules">Modules</a></li>
+                <li><a href="../index.html#pricing">Pricing</a></li>
+                <li><a href="index.html">Blog</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+                <li><a href="../index.html#contact" class="request-demo-nav" data-interest="demo"><i class="fas fa-calendar-check"></i> Request Demo</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="blog-post">
+        <div class="post-container">
+            <div class="breadcrumbs">
+                <a href="../index.html">Home</a> / <a href="index.html">Blog</a> / Inventory Forecasting
+            </div>
+
+            <header class="post-header">
+                <h1>Inventory Forecasting in ERP: Reduce Stockouts and Excess Inventory</h1>
+                <div class="blog-meta">
+                    <span><i class="far fa-calendar"></i> 2026-08-05</span>
+                    <span><i class="far fa-clock"></i> 8 min read</span>
+                    <span><i class="fas fa-tag"></i> Forecasting</span>
+                </div>
+            </header>
+
+            <article class="post-content">
+                <p>Most forecasting problems are not math problems. They are workflow problems: sales, purchasing, and warehouse teams working from different spreadsheets with different assumptions. An ERP helps because forecast inputs (orders, shipments, lead times, receipts) come from real transactions.</p>
+
+                <h2>Key Takeaways</h2>
+                <ul>
+                    <li>Start with simple demand signals: historical shipments + open sales orders.</li>
+                    <li>Convert demand into a replenishment plan using lead time and safety stock.</li>
+                    <li>Use inbound and outbound predictions to see future workload and risk early.</li>
+                </ul>
+
+                <h2>Step 1: Choose demand signals you can trust</h2>
+                <p>Use a short list of signals that are already recorded during normal operations:</p>
+                <ul>
+                    <li><strong>Shipment history</strong> (what you actually delivered).</li>
+                    <li><strong>Sales orders</strong> (what customers are requesting).</li>
+                    <li><strong>Seasonality</strong> (if your business is cyclical, keep the same cycle definition).</li>
+                </ul>
+
+                <h2>Step 2: Add lead time reality</h2>
+                <p>Two numbers drive most replenishment outcomes:</p>
+                <ul>
+                    <li><strong>Supplier lead time</strong>: average and variability.</li>
+                    <li><strong>Internal handling time</strong>: receiving, putaway, inspection, picking capacity.</li>
+                </ul>
+                <p>When lead time is inconsistent, an ERP makes it visible by comparing expected receipt dates to actual receipts.</p>
+
+                <h2>Step 3: Set safety stock (simple and consistent)</h2>
+                <p>Safety stock is a buffer against uncertainty. You do not need an overly complex formula to start; you need one that is applied consistently:</p>
+                <ul>
+                    <li>Higher safety stock for items with long lead times or volatile demand.</li>
+                    <li>Lower safety stock for stable items or items with fast replenishment.</li>
+                </ul>
+
+                <h2>Step 4: Turn forecasts into actions</h2>
+                <p>Forecasting only matters if it changes what you do next. In an ERP, forecasts should translate into:</p>
+                <ul>
+                    <li><strong>Reorder alerts</strong> and proposed purchase quantities.</li>
+                    <li><strong>Planned inbound</strong> receipts to manage space and labor.</li>
+                    <li><strong>Planned outbound</strong> volume to manage picking and shipping capacity.</li>
+                </ul>
+
+                <h2>Inbound vs outbound prediction (why it matters)</h2>
+                <p>Demand forecasting is only half the picture. Two predictions help you plan the next few weeks:</p>
+                <ul>
+                    <li><strong>Inbound prediction</strong>: expected receipts and their timing (POs, shipments, supplier performance).</li>
+                    <li><strong>Outbound prediction</strong>: expected shipments based on sales orders and demand trend.</li>
+                </ul>
+
+                <div class="post-cta">
+                    <h2>Forecast inside the same system you execute in</h2>
+                    <p>Inventory Pro provides inbound and outbound prediction dashboards, inventory tracking, procurement workflows, sales management, audit trails, and AI document intelligence (OCR, PDF and spreadsheet analysis). Pricing is $50/month with unlimited users.</p>
+                    <p><a href="../index.html#contact">Request a demo</a> or review <a href="../index.html#pricing">pricing</a>.</p>
+                </div>
+
+                <h2>Related reading</h2>
+                <ul>
+                    <li><a href="inbound-outbound-prediction.html">Inbound vs Outbound Prediction: Planning Capacity With Better Data</a></li>
+                    <li><a href="procurement-workflow-erp.html">Procurement Workflow in ERP: From Requisition to Purchase Order</a></li>
+                </ul>
+            </article>
+        </div>
+    </main>
+
+    <script src="blog.js"></script>
+</body>
+</html>

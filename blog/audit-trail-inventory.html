@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Audit Trail for Inventory & Procurement: Compliance Without Extra Work | Inventory Pro</title>
+    <meta name="description" content="Learn how an audit trail in ERP improves inventory accuracy, reduces fraud risk, and speeds up investigations. See what events to log and how to use audit history in daily operations.">
+    <meta name="keywords" content="audit trail ERP, inventory audit trail, procurement audit trail, compliance, change log, inventory adjustments, role based access control">
+    <meta name="author" content="Inventory Pro">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="theme-color" content="#2563eb">
+
+    <link rel="canonical" href="https://inventoryproapp.com.au/blog/audit-trail-inventory.html">
+    <link rel="icon" type="image/png" href="../logo.png">
+    <link rel="apple-touch-icon" type="image/png" href="../logo.png">
+
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Inventory Pro">
+    <meta property="og:title" content="Audit Trail for Inventory & Procurement: Compliance Without Extra Work">
+    <meta property="og:description" content="How audit trails improve inventory accuracy, reduce fraud risk, and speed investigations—without slowing down teams.">
+    <meta property="og:url" content="https://inventoryproapp.com.au/blog/audit-trail-inventory.html">
+    <meta property="og:image" content="https://inventoryproapp.com.au/logo.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Audit Trail for Inventory & Procurement: Compliance Without Extra Work">
+    <meta name="twitter:description" content="How audit trails improve inventory accuracy, reduce fraud risk, and speed investigations—without slowing down teams.">
+    <meta name="twitter:image" content="https://inventoryproapp.com.au/logo.png">
+
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Audit Trail for Inventory & Procurement: Compliance Without Extra Work",
+        "description": "Learn how an audit trail in ERP improves inventory accuracy, reduces fraud risk, and speeds up investigations. See what events to log and how to use audit history in daily operations.",
+        "image": "https://inventoryproapp.com.au/logo.png",
+        "author": {
+            "@type": "Organization",
+            "name": "Inventory Pro",
+            "url": "https://inventoryproapp.com.au/"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Inventory Pro",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://inventoryproapp.com.au/logo.png"
+            }
+        },
+        "datePublished": "2026-08-05",
+        "dateModified": "2026-08-05",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://inventoryproapp.com.au/blog/audit-trail-inventory.html"
+        }
+    }
+    </script>
+</head>
+<body class="blog-page">
+    <nav class="navbar">
+        <div class="nav-container">
+            <a class="nav-logo" href="../index.html">
+                <img src="../logo.png" alt="Inventory Pro Logo" class="nav-logo-img">
+                <span>Inventory Pro</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="../index.html#home">Home</a></li>
+                <li><a href="../index.html#features">Features</a></li>
+                <li><a href="../index.html#modules">Modules</a></li>
+                <li><a href="../index.html#pricing">Pricing</a></li>
+                <li><a href="index.html">Blog</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+                <li><a href="../index.html#contact" class="request-demo-nav" data-interest="demo"><i class="fas fa-calendar-check"></i> Request Demo</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="blog-post">
+        <div class="post-container">
+            <div class="breadcrumbs">
+                <a href="../index.html">Home</a> / <a href="index.html">Blog</a> / Audit Trail
+            </div>
+
+            <header class="post-header">
+                <h1>Audit Trail for Inventory & Procurement: Compliance Without Extra Work</h1>
+                <div class="blog-meta">
+                    <span><i class="far fa-calendar"></i> 2026-08-05</span>
+                    <span><i class="far fa-clock"></i> 6 min read</span>
+                    <span><i class="fas fa-tag"></i> Audit Trail</span>
+                </div>
+            </header>
+
+            <article class="post-content">
+                <p>When inventory numbers are questioned, the real problem is rarely “counting.” The real problem is traceability: can you quickly explain what changed, who changed it, and what business event caused it?</p>
+
+                <h2>Key Takeaways</h2>
+                <ul>
+                    <li>An audit trail is a searchable history of changes to critical ERP records.</li>
+                    <li>It improves inventory accuracy by making adjustments accountable and reviewable.</li>
+                    <li>It speeds investigations because you can trace a number back to specific events and users.</li>
+                </ul>
+
+                <h2>What an audit trail should capture</h2>
+                <p>At minimum, each audit trail entry should record:</p>
+                <ul>
+                    <li><strong>Who</strong> performed the action (user identity and role).</li>
+                    <li><strong>What</strong> changed (record type, fields, before/after values).</li>
+                    <li><strong>When</strong> it changed (timestamp).</li>
+                    <li><strong>Context</strong> (reason code, reference document, or note).</li>
+                </ul>
+
+                <h2>High-value events to log (inventory + procurement)</h2>
+                <ul>
+                    <li>Inventory adjustments and transfers (including reason codes).</li>
+                    <li>Purchase order changes: quantity, price, promised date.</li>
+                    <li>Receiving events: partial receipts, short shipments, damages.</li>
+                    <li>Master data changes: SKU definition, units, supplier lead time.</li>
+                </ul>
+
+                <h2>How audit trails reduce real operational risk</h2>
+                <h3>Faster root-cause analysis</h3>
+                <p>Instead of re-counting, you can trace discrepancies to a specific adjustment, receipt, or PO edit.</p>
+
+                <h3>Cleaner approvals and controls</h3>
+                <p>Audit trails work best with role-based access control. Approvals remain lightweight, while high-risk changes are always traceable.</p>
+
+                <h3>Better supplier and process accountability</h3>
+                <p>Late receipts, short deliveries, and repeated exceptions become measurable trends—not stories.</p>
+
+                <h2>Practical tips to make audit trails usable</h2>
+                <ul>
+                    <li>Log fewer things, but log the right things (inventory and money-impacting changes).</li>
+                    <li>Standardize reason codes for adjustments.</li>
+                    <li>Make audit history searchable by SKU, PO, supplier, and user.</li>
+                    <li>Review a short weekly audit summary, not only at month-end.</li>
+                </ul>
+
+                <div class="post-cta">
+                    <h2>Need audit visibility without slowing your team?</h2>
+                    <p>Inventory Pro includes an Audit Trail module, role-based access control, inventory management, procurement management, sales management, and AI document intelligence (OCR, PDF and spreadsheet analysis). Pricing is $50/month with unlimited users.</p>
+                    <p><a href="../index.html#contact">Request a demo</a> or review the <a href="../index.html#features">ERP feature set</a>.</p>
+                </div>
+
+                <h2>Related reading</h2>
+                <ul>
+                    <li><a href="procurement-workflow-erp.html">Procurement Workflow in ERP: From Requisition to Purchase Order</a></li>
+                    <li><a href="supply-chain-erp-guide.html">What Is a Supply Chain ERP? A Practical Guide</a></li>
+                </ul>
+            </article>
+        </div>
+    </main>
+
+    <script src="blog.js"></script>
+</body>
+</html>
