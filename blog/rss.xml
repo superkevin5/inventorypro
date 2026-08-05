@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Inventory Pro Blog</title>
+    <link>https://inventoryproapp.com.au/blog/</link>
+    <description>Practical guides on supply chain ERP, inventory planning, procurement, audit trails, customs data, and forecasting.</description>
+    <language>en</language>
+    <lastBuildDate>Wed, 05 Aug 2026 00:00:00 GMT</lastBuildDate>
+
+    <item>
+      <title>What Is a Supply Chain ERP? A Practical Guide for Growing Businesses</title>
+      <link>https://inventoryproapp.com.au/blog/supply-chain-erp-guide.html</link>
+      <guid>https://inventoryproapp.com.au/blog/supply-chain-erp-guide.html</guid>
+      <description>A practical explanation of supply chain ERP: workflows, data, and KPIs that drive lower cost and better service.</description>
+      <pubDate>Wed, 05 Aug 2026 00:00:00 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>Inventory Forecasting in ERP: Reduce Stockouts and Excess Inventory</title>
+      <link>https://inventoryproapp.com.au/blog/inventory-forecasting-erp.html</link>
+      <guid>https://inventoryproapp.com.au/blog/inventory-forecasting-erp.html</guid>
+      <description>A practical inventory forecasting workflow inside an ERP: demand signals, lead times, safety stock, inbound/outbound predictions, and replenishment actions.</description>
+      <pubDate>Wed, 05 Aug 2026 00:00:00 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>Procurement Workflow in ERP: From Requisition to Purchase Order</title>
+      <link>https://inventoryproapp.com.au/blog/procurement-workflow-erp.html</link>
+      <guid>https://inventoryproapp.com.au/blog/procurement-workflow-erp.html</guid>
+      <description>A step-by-step procurement workflow in ERP: requisition, approval, PO, receiving, exceptions, and audit trail.</description>
+      <pubDate>Wed, 05 Aug 2026 00:00:00 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>Audit Trail for Inventory &amp; Procurement: Compliance Without Extra Work</title>
+      <link>https://inventoryproapp.com.au/blog/audit-trail-inventory.html</link>
+      <guid>https://inventoryproapp.com.au/blog/audit-trail-inventory.html</guid>
+      <description>Learn how audit trails improve inventory accuracy, reduce fraud risk, and speed investigations—without slowing down teams.</description>
+      <pubDate>Wed, 05 Aug 2026 00:00:00 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>Customs Data Management in ERP: Cleaner Imports, Faster Clearance</title>
+      <link>https://inventoryproapp.com.au/blog/customs-data-management-erp.html</link>
+      <guid>https://inventoryproapp.com.au/blog/customs-data-management-erp.html</guid>
+      <description>Customs data management inside ERP reduces rework and delays by linking classification, documents, and landed cost to POs, shipments, and inventory.</description>
+      <pubDate>Wed, 05 Aug 2026 00:00:00 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>Inbound vs Outbound Prediction: Planning Capacity With Better Data</title>
+      <link>https://inventoryproapp.com.au/blog/inbound-outbound-prediction.html</link>
+      <guid>https://inventoryproapp.com.au/blog/inbound-outbound-prediction.html</guid>
+      <description>Inbound and outbound prediction helps teams plan capacity, cash, and service levels by predicting what will arrive and what will ship.</description>
+      <pubDate>Wed, 05 Aug 2026 00:00:00 GMT</pubDate>
+    </item>
+  </channel>
+</rss>

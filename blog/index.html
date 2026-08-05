@@ -12,7 +12,9 @@
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="theme-color" content="#2563eb">
 
-    <link rel="canonical" href="https://inventoryproapp.com.au/blog/index.html">
+    <link rel="canonical" href="https://inventoryproapp.com.au/blog/">
+    <link rel="alternate" hreflang="en" href="https://inventoryproapp.com.au/blog/">
+    <link rel="alternate" type="application/rss+xml" title="Inventory Pro Blog RSS" href="https://inventoryproapp.com.au/blog/rss.xml">
     <link rel="icon" type="image/png" href="../logo.png">
     <link rel="apple-touch-icon" type="image/png" href="../logo.png">
 
@@ -20,13 +22,13 @@
     <meta property="og:site_name" content="Inventory Pro">
     <meta property="og:title" content="Inventory Pro Blog | Supply Chain ERP Guides">
     <meta property="og:description" content="Practical guides on supply chain ERP, inventory planning, procurement, audit trails, customs data, and forecasting.">
-    <meta property="og:url" content="https://inventoryproapp.com.au/blog/index.html">
-    <meta property="og:image" content="../logo.png">
+    <meta property="og:url" content="https://inventoryproapp.com.au/blog/">
+    <meta property="og:image" content="https://inventoryproapp.com.au/logo.png">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Inventory Pro Blog | Supply Chain ERP Guides">
     <meta name="twitter:description" content="Practical guides on supply chain ERP, inventory planning, procurement, audit trails, customs data, and forecasting.">
-    <meta name="twitter:image" content="../logo.png">
+    <meta name="twitter:image" content="https://inventoryproapp.com.au/logo.png">
 
     <link rel="stylesheet" href="../styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -38,7 +40,7 @@
         "@type": "Blog",
         "name": "Inventory Pro Blog",
         "description": "Practical guides on supply chain ERP, inventory planning, procurement, audit trails, customs data, and forecasting.",
-        "url": "https://inventoryproapp.com.au/blog/index.html",
+        "url": "https://inventoryproapp.com.au/blog/",
         "publisher": {
             "@type": "Organization",
             "name": "Inventory Pro",
@@ -48,6 +50,27 @@
                 "url": "https://inventoryproapp.com.au/logo.png"
             }
         }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://inventoryproapp.com.au/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Blog",
+                "item": "https://inventoryproapp.com.au/blog/"
+            }
+        ]
     }
     </script>
 </head>
@@ -156,6 +179,38 @@
             </div>
         </div>
     </main>
+
+    <footer class="site-footer" aria-label="Site footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a class="footer-logo" href="../index.html">
+                    <img src="../logo.png" alt="Inventory Pro Logo">
+                    <span>Inventory Pro</span>
+                </a>
+                <p>Supply Chain & Inventory ERP with 20+ modules including procurement, sales, audit trail, customs data management, and inbound/outbound prediction. $50/month with unlimited users.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Product</h4>
+                <a href="../index.html#features">Features</a>
+                <a href="../index.html#modules">Modules</a>
+                <a href="../index.html#pricing">Pricing</a>
+            </div>
+            <div class="footer-links">
+                <h4>Resources</h4>
+                <a href="index.html">Blog</a>
+                <a href="../index.html#contact">Contact</a>
+                <a href="rss.xml">RSS</a>
+                <a href="../sitemap.xml">Sitemap</a>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <span>© 2026 Inventory Pro</span>
+            <div class="footer-bottom-links">
+                <a href="../index.html#pricing">Pricing</a>
+                <a href="../index.html#contact">Request Demo</a>
+            </div>
+        </div>
+    </footer>
 
     <script src="blog.js"></script>
 </body>
