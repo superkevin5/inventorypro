@@ -39,6 +39,45 @@ body {
     overflow-wrap: break-word;
 }
 
+.trial-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 0.65rem 1rem;
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    color: #ffffff;
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-align: center;
+    box-shadow: 0 6px 18px rgba(5, 150, 105, 0.22);
+}
+
+.trial-banner-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.35rem 0.8rem;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 800;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.trial-banner-link:hover {
+    background: rgba(255, 255, 255, 0.28);
+    transform: translateY(-1px);
+}
+
 /* Text overflow handling */
 h1, h2, h3, h4, h5, h6, p, span, div, a, button, input, textarea, select {
     word-wrap: break-word;
@@ -87,7 +126,7 @@ h1, h2, h3, h4, h5, h6, p, span, div, a, button, input, textarea, select {
 /* Navigation with text overflow protection */
 .navbar {
     position: fixed;
-    top: 0;
+    top: 46px;
     left: 0;
     right: 0;
     background: rgba(255, 255, 255, 0.95);
@@ -196,7 +235,7 @@ h1, h2, h3, h4, h5, h6, p, span, div, a, button, input, textarea, select {
     background: var(--gradient-hero);
     position: relative;
     overflow: hidden;
-    padding-top: 80px;
+    padding-top: 126px;
 }
 
 .hero::before {
@@ -1623,7 +1662,7 @@ h1, h2, h3, h4, h5, h6, p, span, div, a, button, input, textarea, select {
         position: fixed !important;
         display: block !important;
         left: 0 !important;
-        top: 72px !important;
+        top: 118px !important;
         right: 0 !important;
         flex-direction: column !important;
         align-items: stretch !important;
@@ -1644,7 +1683,7 @@ h1, h2, h3, h4, h5, h6, p, span, div, a, button, input, textarea, select {
         overflow: visible !important;
         gap: 0.4rem !important;
         z-index: 9998 !important;
-        max-height: calc(100vh - 72px) !important;
+        max-height: calc(100vh - 118px) !important;
         overflow-y: auto !important;
     }
     
@@ -1753,6 +1792,13 @@ h1, h2, h3, h4, h5, h6, p, span, div, a, button, input, textarea, select {
 
     .section-header h2 {
         font-size: 2.5rem;
+    }
+
+    .trial-banner {
+        flex-direction: column;
+        gap: 0.45rem;
+        padding: 0.55rem 0.9rem;
+        font-size: 0.88rem;
     }
 }
 
