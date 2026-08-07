@@ -185,6 +185,7 @@
             </div>
             <ul class="nav-menu">
                 <li><a href="#home">Home</a></li>
+                <li><a href="#demo">Demo</a></li>
                 <li><a href="#features">Features</a></li>
                 <li><a href="#modules">Modules</a></li>
                 <li><a href="#ai-chat">AI Chat</a></li>
@@ -239,6 +240,85 @@
                         <div class="module-item" data-module="supply">Supply</div>
                         <div class="module-item" data-module="user">Users</div>
                         <div class="module-item" data-module="repair">Repair</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Demo Video Section -->
+    <section id="demo" class="demo" aria-labelledby="demo-title">
+        <div class="container">
+            <div class="section-header">
+                <h2 id="demo-title">See Inventory Pro in Action</h2>
+                <p>Watch a quick walkthrough of how Inventory Pro handles procurement, inventory, sales, custom data, audit trails, and predictions in one integrated ERP dashboard.</p>
+            </div>
+            <div class="demo-wrapper">
+                <div class="demo-video" id="demoVideo">
+                    <div class="demo-native-wrap" id="demoNativeWrap" hidden>
+                        <video
+                            id="demoNativeVideo"
+                            controls
+                            playsinline
+                            preload="metadata"
+                            poster="https://img.youtube.com/vi/NAJXjOxHKT8/hqdefault.jpg"
+                            class="demo-native-video">
+                            <source src="demo.mp4" type="video/mp4">
+                            <source src="demo.webm" type="video/webm">
+                        </video>
+                    </div>
+                    <div class="demo-embed-wrap" id="demoEmbedWrap">
+                        <iframe
+                            id="demoIframe"
+                            src="https://www.youtube.com/embed/NAJXjOxHKT8?origin=http%3A%2F%2F127.0.0.1%3A8080"
+                            title="Inventory Pro - Supply Chain &amp; Inventory ERP Demo"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            loading="eager"></iframe>
+                    </div>
+                    <div class="demo-embed-fallback" id="demoEmbedFallback" hidden>
+                        <a class="demo-video-placeholder"
+                           href="https://www.youtube.com/watch?v=NAJXjOxHKT8"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="Watch Inventory Pro demo video on YouTube">
+                            <div class="demo-thumbnail">
+                                <img
+                                    src="https://img.youtube.com/vi/NAJXjOxHKT8/hqdefault.jpg"
+                                    alt="Inventory Pro ERP demo video thumbnail"
+                                    loading="lazy"
+                                    onerror="this.onerror=null;this.style.display='none';this.parentElement.classList.add('no-thumb');">
+                            </div>
+                            <div class="demo-overlay">
+                                <div class="demo-overlay-text">
+                                    <div class="demo-overlay-label">TIP: OPEN VIA HTTP</div>
+                                    <div class="demo-overlay-title">Inventory Pro — Supply Chain &amp; Inventory ERP Walkthrough</div>
+                                    <div class="demo-overlay-hint"><i class="fab fa-youtube"></i> Click to watch on YouTube</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="demo-aside">
+                    <div class="demo-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                        <h3>What you'll see</h3>
+                        <ul class="module-features">
+                            <li>Real-time inventory overview across locations</li>
+                            <li>Procure-to-receive workflow with approvals</li>
+                            <li>Sales order &amp; outbound shipment management</li>
+                            <li>Inbound / outbound prediction dashboards</li>
+                            <li>Custom data management &amp; audit trail visibility</li>
+                            <li>AI document intelligence (OCR, PDF, spreadsheets)</li>
+                        </ul>
+                        <div class="demo-cta">
+                            <a href="#contact" class="btn btn-primary"><i class="fas fa-calendar-check"></i> Request Live Demo</a>
+                            <a href="#pricing" class="btn btn-secondary">See Pricing</a>
+                        </div>
                     </div>
                 </div>
             </div>

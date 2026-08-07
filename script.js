@@ -1445,6 +1445,45 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+
+    // Demo video: prefer native local mp4/webm if present; fallback to YouTube; show tip on file://
+    (function initDemoVideo() {
+        const nativeWrap = document.getElementById('demoNativeWrap');
+        const nativeVideo = document.getElementById('demoNativeVideo');
+        const embedWrap = document.getElementById('demoEmbedWrap');
+        const embedFallback = document.getElementById('demoEmbedFallback');
+
+        function showFallback() {
+            if (embedWrap) embedWrap.hidden = true;
+            if (embedFallback) embedFallback.hidden = false;
+        }
+
+        if (nativeVideo && nativeWrap) {
+            const candidates = ['demo.mp4', 'demo.webm'];
+            let checked = 0;
+            candidates.forEach(function(src) {
+                fetch(src, { method: 'HEAD' })
+                    .then(function(res) {
+                        if (res.ok && !nativeWrap.hidden === false) {
+                            if (embedWrap) embedWrap.hidden = true;
+                            if (embedFallback) embedFallback.hidden = true;
+                            nativeWrap.hidden = false;
+                        }
+                    })
+                    .catch(function() {})
+                    .finally(function() {
+                        checked += 1;
+                        if (checked === candidates.length && nativeWrap.hidden &&
+                            window.location.protocol === 'file:') {
+                            // On file:// YouTube embed often fails, show helpful fallback
+                            showFallback();
+                        }
+                    });
+            });
+        } else if (window.location.protocol === 'file:') {
+            showFallback();
+        }
+    })();
 });
 
 // Email Modal Functionality
