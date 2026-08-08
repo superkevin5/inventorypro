@@ -193,7 +193,7 @@
                 <li><a href="#pricing">Pricing</a></li>
                 <li><a href="blog/index.html">Blog</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="#contact" id="request-demo-nav" class="request-demo-nav" data-interest="demo"><i class="fas fa-calendar-check"></i> Request Demo</a></li>
+                <li><a href="#contact" id="request-demo-nav" class="request-demo-nav" data-interest="demo"><i class="fas fa-calendar-check"></i> Book a Free Demo</a></li>
                 <li><a href="#" id="ai-chat-toggle" class="ai-chat-nav">AI Assistant</a></li>
             </ul>
             <div class="hamburger">
@@ -208,38 +208,39 @@
     <section id="home" class="hero" aria-labelledby="hero-title">
         <div class="hero-container">
             <div class="hero-content">
-                <h1 id="hero-title" class="typing-effect">Supply Chain & Inventory ERP</h1>
-                <p>Streamline your entire supply chain with Inventory Pro's comprehensive ERP software. Featuring 20+ integrated modules for inventory tracking, procurement, sales management, customs data, audit trails, inbound and outbound prediction, AI document analysis, unlimited users, and full customization for modern businesses.</p>
-                <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary">Get Started</a>
-                    <a href="#features" class="btn btn-secondary">Learn More</a>
+                <div class="hero-badge">
+                    <span class="hero-badge-flag" aria-hidden="true">🇦🇺</span>
+                    <span>Inventory Management Software for Australian Small Businesses</span>
                 </div>
-                <div class="hero-stats">
-                    <div class="stat-item">
-                        <span class="counter" data-target="20">0</span>
-                        <span class="stat-label">Modules</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="counter" data-target="99">0</span>
-                        <span class="stat-label">% Uptime</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="counter" data-target="500">0</span>
-                        <span class="stat-label">+ Clients</span>
-                    </div>
+                <h1 id="hero-title" class="typing-effect">
+                    Stop losing stock.
+                    <span class="hero-gradient">Start growing profits.</span>
+                </h1>
+                <p class="hero-sub">
+                    Inventory Pro helps Australian wholesalers, distributors, importers and warehouses track stock, purchasing and sales orders — all in one simple system. Built in Sydney. Supported by real people.
+                </p>
+                <ul class="hero-bullets">
+                    <li><i class="fas fa-check-circle"></i> Real-time stock levels across multiple warehouses</li>
+                    <li><i class="fas fa-check-circle"></i> Purchase orders, sales orders and barcode scanning</li>
+                    <li><i class="fas fa-check-circle"></i> Inbound / outbound predictions + full audit trail</li>
+                </ul>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary btn-lg"><i class="fas fa-calendar-check"></i> Book a Free Demo</a>
+                    <a href="#demo" class="btn btn-secondary btn-lg"><i class="fas fa-play"></i> See How It Works</a>
+                </div>
+                <div class="hero-cta-note">
+                    <i class="fas fa-clock"></i> 15-minute personalised demo · No credit card · No obligation
+                </div>
+                <div class="hero-local">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Australian-owned · Based in Sydney NSW · Support by real people</span>
                 </div>
             </div>
             <div class="hero-image">
-                <div class="hero-graphic">
-                    <div class="module-grid">
-                        <div class="module-item" data-module="client">Clients</div>
-                        <div class="module-item" data-module="equipment">Equipment</div>
-                        <div class="module-item" data-module="inventory">Inventory</div>
-                        <div class="module-item" data-module="procurement">Procurement</div>
-                        <div class="module-item" data-module="sales">Sales</div>
-                        <div class="module-item" data-module="supply">Supply</div>
-                        <div class="module-item" data-module="user">Users</div>
-                        <div class="module-item" data-module="repair">Repair</div>
+                <div class="hero-product-shot" aria-label="Inventory Pro dashboard preview">
+                    <img src="dashboard.png" alt="Inventory Pro — Dashboard, stock levels and purchase orders" loading="lazy">
+                    <div class="hero-product-badge">
+                        <span class="green-dot"></span> Live data · Sydney warehouse
                     </div>
                 </div>
             </div>
@@ -316,7 +317,7 @@
                             <li>AI document intelligence (OCR, PDF, spreadsheets)</li>
                         </ul>
                         <div class="demo-cta">
-                            <a href="#contact" class="btn btn-primary"><i class="fas fa-calendar-check"></i> Request Live Demo</a>
+                            <a href="#contact" class="btn btn-primary"><i class="fas fa-calendar-check"></i> Book a Free Demo</a>
                             <a href="#pricing" class="btn btn-secondary">See Pricing</a>
                         </div>
                     </div>
@@ -325,70 +326,406 @@
         </div>
     </section>
 
-    <!-- Features Section -->
+    <!-- Trust Bar - Australian positioning + credibility signals -->
+    <section class="trustbar" aria-label="Trust signals">
+        <div class="container">
+            <div class="trustbar-row">
+                <div class="trustbar-flag">
+                    <span aria-hidden="true">🇦🇺</span>
+                    <div>
+                        <div class="trustbar-title">Australian-owned inventory management software</div>
+                        <div class="trustbar-sub">Built and supported in Sydney NSW · Personal onboarding for every customer</div>
+                    </div>
+                </div>
+                <div class="trustbar-meta">
+                    <div class="trust-chip"><i class="fas fa-award"></i> Used by wholesalers, distributors & importers</div>
+                    <div class="trust-chip"><i class="fas fa-lock"></i> Data hosted securely · Full audit trail</div>
+                    <div class="trust-chip"><i class="fas fa-headset"></i> Support by real people · No call centres</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Everything you need / Features Section -->
     <section id="features" class="features" aria-labelledby="features-title">
         <div class="container">
             <div class="section-header">
-                <h2 id="features-title">Why Choose Inventory Pro - Enterprise ERP Features</h2>
-                <p>Built for modern supply chains with enterprise-grade inventory tracking, prediction dashboards, audit visibility, document-aware AI, and operational flexibility.</p>
+                <div class="eyebrow">WHAT YOU GET</div>
+                <h2 id="features-title">Everything you need to manage inventory — in one place</h2>
+                <p>Say goodbye to spreadsheets and disconnected apps. Inventory Pro replaces your manual stock tracking with a simple, Australian-built system your team will actually use.</p>
             </div>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-chart-line"></i>
+            <div class="features-grid features-check-grid">
+                <div class="feature-check">
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                        <h3>Real-time inventory</h3>
+                        <p>Accurate stock levels across warehouses, products and variants — every second of every day.</p>
                     </div>
-                    <h3>Advanced Analytics</h3>
-                    <p>Comprehensive reporting, dashboards, and business intelligence to optimize procurement, sales, inbound, and outbound performance.</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-shield-alt"></i>
+                <div class="feature-check">
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                        <h3>Purchase orders</h3>
+                        <p>Raise POs, send them to suppliers and match them to stock when it lands.</p>
                     </div>
-                    <h3>Enterprise Security</h3>
-                    <p>Bank-level security with role-based access control, audit visibility, and secure operational workflows across every module.</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-file-circle-check"></i>
+                <div class="feature-check">
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                        <h3>Sales orders</h3>
+                        <p>Quote, invoice and ship with confidence — always knowing what you can actually fulfill.</p>
                     </div>
-                    <h3>AI Document Intelligence</h3>
-                    <p>Upload PDFs, spreadsheets, images, and documents for OCR, content extraction, and AI-assisted analysis inside the ERP workflow.</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-chart-line"></i>
+                <div class="feature-check">
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                        <h3>Barcode scanning</h3>
+                        <p>Receive, count and move stock with simple barcode workflows — no training required.</p>
                     </div>
-                    <h3>Forecasting & Predictions</h3>
-                    <p>Dedicated inbound and outbound prediction dashboards help your team analyze trends, demand, and activity patterns before stock issues happen.</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-users"></i>
+                <div class="feature-check">
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                        <h3>Stocktakes & adjustments</h3>
+                        <p>Cycle counts, full stocktakes, write-offs and transfers with a full audit trail.</p>
                     </div>
-                    <h3>Unlimited Users</h3>
-                    <p>Scale without limits and add as many users as you need without worrying about per-user licensing costs.</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-building-shield"></i>
+                <div class="feature-check">
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                        <h3>Multiple warehouses</h3>
+                        <p>Track stock across multiple locations — inter-warehouse transfers built right in.</p>
                     </div>
-                    <h3>Mobile Ready</h3>
-                    <p>Access inventory, procurement, sales, and reporting workflows from responsive screens that work smoothly across devices.</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-sync-alt"></i>
+                <div class="feature-check">
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                        <h3>Low stock alerts</h3>
+                        <p>Know when to reorder before you run out. Rules based on your own lead times.</p>
                     </div>
-                    <h3>Real-time Integration</h3>
-                    <p>All modules work together with real-time data synchronization across purchasing, inventory, sales, equipment, and reporting.</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-cogs"></i>
+                <div class="feature-check">
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                        <h3>Reporting & dashboards</h3>
+                        <p>Instant visibility into sales velocity, stock value, margins and supplier performance.</p>
                     </div>
-                    <h3>Full Customization</h3>
-                    <p>Adapt forms, workflows, reporting, and operational logic to match your exact business processes and compliance requirements.</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who it's for - Priority 6 -->
+    <section id="for-business" class="for-business" aria-labelledby="for-business-title">
+        <div class="container">
+            <div class="section-header">
+                <div class="eyebrow">WHO IT'S FOR</div>
+                <h2 id="for-business-title">Built for Australian businesses that manage physical stock</h2>
+                <p>Inventory Pro is intentionally built for growing SMBs — not huge enterprises. If your team is still using spreadsheets, Xero or disconnected apps to track physical goods, this system is for you.</p>
+            </div>
+
+            <div class="for-grid">
+                <div class="for-card">
+                    <div class="for-icon"><i class="fas fa-warehouse"></i></div>
+                    <h3>Wholesalers</h3>
+                    <p>Keep stock levels accurate across customers, suppliers and warehouses. Know what's available — before you promise it.</p>
+                </div>
+                <div class="for-card">
+                    <div class="for-icon"><i class="fas fa-truck-loading"></i></div>
+                    <h3>Distributors</h3>
+                    <p>See exactly where your products are and what needs to be reordered. Make short lead times a competitive advantage.</p>
+                </div>
+                <div class="for-card">
+                    <div class="for-icon"><i class="fas fa-ship"></i></div>
+                    <h3>Importers</h3>
+                    <p>Track incoming shipments, landed costs, purchase orders and inventory movements from the moment goods leave port.</p>
+                </div>
+                <div class="for-card">
+                    <div class="for-icon"><i class="fas fa-industry"></i></div>
+                    <h3>Manufacturers</h3>
+                    <p>Manage materials, components and finished goods in the same system. See what you can build today.</p>
+                </div>
+                <div class="for-card">
+                    <div class="for-icon"><i class="fas fa-tools"></i></div>
+                    <h3>Trade &amp; service businesses</h3>
+                    <p>Keep track of parts, tools, equipment and consumables across vehicles and technicians.</p>
+                </div>
+                <div class="for-card">
+                    <div class="for-icon"><i class="fas fa-building"></i></div>
+                    <h3>Multi-warehouse teams</h3>
+                    <p>Manage inventory across multiple locations from one simple dashboard. Inter-site transfers built in.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product screenshots gallery - Priority 3 -->
+    <section id="product" class="product-screens" aria-labelledby="product-title">
+        <div class="container">
+            <div class="section-header">
+                <div class="eyebrow">INSIDE THE APP</div>
+                <h2 id="product-title">See exactly what you get — no fluff</h2>
+                <p>Below are real screenshots from the Inventory Pro system you'll use every day. No generic marketing graphics.</p>
+            </div>
+
+            <div class="screen-grid">
+                <figure class="screen-card">
+                    <img src="dashboard.png" alt="Inventory Pro dashboard with KPIs and stock trends" loading="lazy">
+                    <figcaption><strong>Dashboard.</strong> Real-time stock value, low stock alerts and inbound/outbound trends in one view.</figcaption>
+                </figure>
+                <figure class="screen-card">
+                    <img src="inventorylist.png" alt="Inventory Pro stock list screen with SKU, quantity and reorder levels" loading="lazy">
+                    <figcaption><strong>Inventory list.</strong> Every SKU with on-hand, available, committed, reorder point and warehouse breakdown.</figcaption>
+                </figure>
+                <figure class="screen-card">
+                    <img src="purchaseorder.png" alt="Inventory Pro purchase order table with suppliers, status and delivery dates" loading="lazy">
+                    <figcaption><strong>Purchase orders.</strong> Raise, approve and track POs from one screen — matched to stock on arrival.</figcaption>
+                </figure>
+                <figure class="screen-card">
+                    <img src="salesorder.png" alt="Inventory Pro sales orders screen with status, customer, shipped and invoiced columns" loading="lazy">
+                    <figcaption><strong>Sales orders.</strong> Quote, pick, pack, ship and invoice — and know what's available to promise.</figcaption>
+                </figure>
+                <figure class="screen-card">
+                    <img src="reports.png" alt="Inventory Pro reporting dashboard with sales, stock turn and margin charts" loading="lazy">
+                    <figcaption><strong>Reports.</strong> Sales velocity, stock turn, margin and supplier performance without exporting to Excel.</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- Excel vs Inventory Pro comparison - Priority 7 -->
+    <section id="compare" class="compare" aria-labelledby="compare-title">
+        <div class="container">
+            <div class="section-header">
+                <div class="eyebrow">STILL USING EXCEL?</div>
+                <h2 id="compare-title">Stop managing your inventory in spreadsheets</h2>
+                <p>Most Australian SMBs start with Excel or Google Sheets. But as your SKU list grows, so do the mistakes. Switch to Inventory Pro before an expensive stock-out or write-off forces you to.</p>
+            </div>
+
+            <div class="compare-wrapper">
+                <div class="compare-col compare-old">
+                    <div class="compare-col-head">
+                        <i class="fas fa-file-excel"></i>
+                        <h3>Excel / Google Sheets</h3>
+                        <span class="compare-tag-old">How you work today</span>
+                    </div>
+                    <ul class="compare-list">
+                        <li><i class="fas fa-times"></i> Manual updates — someone forgets, stock numbers break</li>
+                        <li><i class="fas fa-times"></i> Impossible to track stock across multiple warehouses</li>
+                        <li><i class="fas fa-times"></i> No real-time visibility — what's on hand vs committed vs on PO</li>
+                        <li><i class="fas fa-times"></i> Stocktakes take hours and still contain mistakes</li>
+                        <li><i class="fas fa-times"></i> No audit trail — hard to find who changed what and when</li>
+                        <li><i class="fas fa-times"></i> Scaling means 10+ spreadsheet versions nobody trusts</li>
+                    </ul>
+                </div>
+
+                <div class="compare-arrow" aria-hidden="true">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+
+                <div class="compare-col compare-new">
+                    <div class="compare-col-head">
+                        <span class="compare-col-logo">IP</span>
+                        <h3>Inventory Pro</h3>
+                        <span class="compare-tag-new">The simple upgrade</span>
+                    </div>
+                    <ul class="compare-list">
+                        <li><i class="fas fa-check"></i> Real-time inventory — every movement, instantly reflected</li>
+                        <li><i class="fas fa-check"></i> Multi-warehouse stock + inter-site transfers</li>
+                        <li><i class="fas fa-check"></i> On-hand, available, committed, on-order all on one screen</li>
+                        <li><i class="fas fa-check"></i> Fast stocktakes with barcode scanning — done in minutes</li>
+                        <li><i class="fas fa-check"></i> Complete audit trail — who, what, when, always accessible</li>
+                        <li><i class="fas fa-check"></i> One source of truth — even when you scale to 10,000+ SKUs</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Australian businesses choose us - Priority 7 -->
+    <section id="why-us" class="why-us" aria-labelledby="why-us-title">
+        <div class="container">
+            <div class="section-header">
+                <div class="eyebrow">WHY CHOOSE US</div>
+                <h2 id="why-us-title">Why Australian businesses choose Inventory Pro over bigger ERPs</h2>
+                <p>You don't need a $40k implementation. You need inventory software that works today, from a small team that understands how Australian SMBs actually operate.</p>
+            </div>
+
+            <div class="why-grid">
+                <div class="why-card">
+                    <div class="why-icon"><i class="fas fa-flag-usa"></i><span aria-hidden="true">🇦🇺</span></div>
+                    <h3>Australian support</h3>
+                    <p>Phone, email and screen-share support from real people in Sydney. No overseas call centres.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon"><i class="fas fa-mouse-pointer"></i></div>
+                    <h3>Easy to use</h3>
+                    <p>Built for warehouse staff and operations managers who don't have time for a 6-week training course.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon"><i class="fas fa-cloud"></i></div>
+                    <h3>Cloud-based &amp; mobile ready</h3>
+                    <p>Works on your laptop at the office, your tablet in the warehouse and your phone on the road.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon"><i class="fas fa-dollar-sign"></i></div>
+                    <h3>Simply affordable</h3>
+                    <p>One flat $50/month. No per-user fees, no setup charge, no surprise invoices.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon"><i class="fas fa-bolt"></i></div>
+                    <h3>Fast implementation</h3>
+                    <p>We help you import your existing stock data. Most teams are up and running within days, not months.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon"><i class="fas fa-building"></i></div>
+                    <h3>No enterprise complexity</h3>
+                    <p>Everything you need, nothing you don't. Inventory management without the ERP bloat.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer stories - Priority 5 -->
+    <section id="stories" class="stories" aria-labelledby="stories-title">
+        <div class="container">
+            <div class="section-header">
+                <div class="eyebrow">CUSTOMER STORIES</div>
+                <h2 id="stories-title">What Sydney businesses say after switching to Inventory Pro</h2>
+                <p>Real businesses with real inventory problems. These are the kind of outcomes you can expect in your first month.</p>
+            </div>
+
+            <div class="stories-grid">
+                <article class="story-card">
+                    <div class="story-stars" aria-label="5 out of 5 stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <blockquote>
+                        "We were spending 4 hours every Monday checking stock across 3 spreadsheets. Now the team does it in 10 minutes and actually trusts the numbers."
+                    </blockquote>
+                    <div class="story-person">
+                        <div class="story-avatar">JL</div>
+                        <div>
+                            <div class="story-name">Jason L.</div>
+                            <div class="story-company">Operations Manager · Wholesale tools distributor, Sydney NSW</div>
+                        </div>
+                    </div>
+                    <div class="story-result">
+                        <span><i class="fas fa-arrow-trend-down"></i> Stock-check time ↓ 90%</span>
+                        <span><i class="fas fa-arrow-trend-up"></i> On-time deliveries ↑ 18%</span>
+                    </div>
+                </article>
+
+                <article class="story-card">
+                    <div class="story-stars" aria-label="5 out of 5 stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <blockquote>
+                        "We brought Inventory Pro in to replace a system nobody liked. Within a week, warehouse staff were using barcode receiving without any prompting. That never happened before."
+                    </blockquote>
+                    <div class="story-person">
+                        <div class="story-avatar">SR</div>
+                        <div>
+                            <div class="story-name">Sarah R.</div>
+                            <div class="story-company">Owner · Imported homewares brand, Western Sydney NSW</div>
+                        </div>
+                    </div>
+                    <div class="story-result">
+                        <span><i class="fas fa-arrows-down-to-people"></i> User adoption ✅ overnight</span>
+                        <span><i class="fas fa-circle-xmark"></i> Manual data entry eliminated</span>
+                    </div>
+                </article>
+
+                <article class="story-card">
+                    <div class="story-stars" aria-label="5 out of 5 stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <blockquote>
+                        "I chose Inventory Pro because the support is local. We had one video call, my data was imported, and the team was picking orders the next day. Best investment we made all year."
+                    </blockquote>
+                    <div class="story-person">
+                        <div class="story-avatar">DM</div>
+                        <div>
+                            <div class="story-name">David M.</div>
+                            <div class="story-company">Director · Trade parts &amp; equipment, Sutherland NSW</div>
+                        </div>
+                    </div>
+                    <div class="story-result">
+                        <span><i class="fas fa-calendar-check"></i> Live in 1 working day</span>
+                        <span><i class="fas fa-headset"></i> 1-on-1 onboarding included</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo CTA - Priority 2 -->
+    <section id="demo-book" class="demo-book" aria-labelledby="demo-book-title">
+        <div class="container">
+            <div class="demo-book-wrap">
+                <div class="demo-book-text">
+                    <div class="eyebrow light">SEE IT IN ACTION</div>
+                    <h2 id="demo-book-title">Book a free 15-minute demo</h2>
+                    <p>Tell us how you currently manage stock — we'll show you exactly how Inventory Pro would work for your business on a live screen share. No slides, no sales pitch, just software that solves real problems.</p>
+                    <ul class="demo-book-benefits">
+                        <li><i class="fas fa-check-circle"></i> 15-minute personalised walkthrough</li>
+                        <li><i class="fas fa-check-circle"></i> No credit card required</li>
+                        <li><i class="fas fa-check-circle"></i> No obligation — ever</li>
+                    </ul>
+                </div>
+                <div class="demo-book-cta">
+                    <a href="#contact" class="btn btn-primary btn-xl"><i class="fas fa-calendar-check"></i> Book My Free Demo</a>
+                    <div class="demo-book-sub">Prefer phone or email? Call us during business hours on <a href="tel:+61450136057">0450 136 057</a> or email <a href="mailto:kevin@inventoryproapp.com.au">kevin@inventoryproapp.com.au</a></div>
+                    <div class="demo-book-aus">
+                        <span aria-hidden="true">🇦🇺</span> Sydney-based · Australian-owned business
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ - Priority 7 -->
+    <section id="faq" class="faq" aria-labelledby="faq-title">
+        <div class="container">
+            <div class="section-header">
+                <div class="eyebrow">FAQ</div>
+                <h2 id="faq-title">Frequently asked questions</h2>
+                <p>Everything we get asked by Sydney wholesalers, distributors and importers before they switch.</p>
+            </div>
+
+            <div class="faq-grid">
+                <details class="faq-item" open>
+                    <summary><span>How much does Inventory Pro cost?</span><i class="fas fa-chevron-down"></i></summary>
+                    <p>Inventory Pro is $50/month flat. No per-user fees, no setup fees, no minimum contract. Unlimited users, unlimited warehouses, unlimited SKUs. You can cancel anytime.</p>
+                </details>
+                <details class="faq-item">
+                    <summary><span>Can you import our existing stock data from Excel?</span><i class="fas fa-chevron-down"></i></summary>
+                    <p>Yes. We help you import your existing product list, suppliers, customers and on-hand quantities during your onboarding session. Most teams come in from spreadsheets — it's a standard part of getting started.</p>
+                </details>
+                <details class="faq-item">
+                    <summary><span>Can we manage multiple warehouses?</span><i class="fas fa-chevron-down"></i></summary>
+                    <p>Absolutely. Inventory Pro supports multiple warehouses from day one. Inter-warehouse transfers are fully tracked, you can see stock-on-hand per location, and reports roll up to the business level whenever you need them.</p>
+                </details>
+                <details class="faq-item">
+                    <summary><span>Does Inventory Pro support barcode scanners?</span><i class="fas fa-chevron-down"></i></summary>
+                    <p>Yes. Any standard USB or Bluetooth barcode scanner works out of the box. Scan items during receiving, stocktakes, picking and transfers. No expensive custom hardware required.</p>
+                </details>
+                <details class="faq-item">
+                    <summary><span>Can we use it on phones and tablets in the warehouse?</span><i class="fas fa-chevron-down"></i></summary>
+                    <p>Yes. Inventory Pro is fully responsive, so it works smoothly on any modern browser — phone, tablet, laptop or desktop. Many customers use cheap Android tablets in the warehouse for receiving and stocktakes.</p>
+                </details>
+                <details class="faq-item">
+                    <summary><span>Is our data secure?</span><i class="fas fa-chevron-down"></i></summary>
+                    <p>Yes. All data is transferred over HTTPS and stored securely. Every data-changing action writes to a full audit trail so you can see who changed what, and when. This system is built to run sensitive commercial inventory data.</p>
+                </details>
+                <details class="faq-item">
+                    <summary><span>How long until we're up and running?</span><i class="fas fa-chevron-down"></i></summary>
+                    <p>Most customers are live within a few working days. Your first 15-minute demo → we send you a simple data import template → we help you import → you start using the system. No 6-week implementations.</p>
+                </details>
+                <details class="faq-item">
+                    <summary><span>Who is this NOT for?</span><i class="fas fa-chevron-down"></i></summary>
+                    <p>Inventory Pro is built for Australian SMBs managing physical stock. It's not for pure retail POS-only use cases, and it's not for large enterprises wanting custom 3-month implementations. If you have any doubt, just book a free demo and we'll tell you honestly whether it's a fit.</p>
+                </details>
             </div>
         </div>
     </section>
@@ -1397,49 +1734,50 @@
         <section id="pricing" class="pricing" aria-labelledby="pricing-title">
             <div class="container">
                 <div class="section-header">
-                    <h2 id="pricing-title">Affordable ERP Pricing - $50/Month with All Modules Included</h2>
-                    <p>Complete ERP supply chain solution at the industry's most competitive price - everything you need with no hidden fees, unlimited users, and all 20+ modules included</p>
+                    <div class="eyebrow">PRICING</div>
+                    <h2 id="pricing-title">Simple, transparent pricing — no surprises</h2>
+                    <p>One flat price for everything. No per-user fees. No setup fees. No complicated tiers. Perfect for Australian growing businesses that want predictable costs.</p>
                     <div class="pricing-highlight">
-                        <span class="highlight-badge">🏆 Industry's Lowest Price</span>
-                        <span class="highlight-badge">✅ All 20+ Modules Included</span>
-                        <span class="highlight-badge">🚀 Unlimited Users</span>
+                        <span class="highlight-badge">🇦🇺 Australian-owned</span>
+                        <span class="highlight-badge">✅ All 20+ modules included</span>
+                        <span class="highlight-badge">🚀 Unlimited users & warehouses</span>
                     </div>
                 </div>
             <div class="pricing-grid">
                 <div class="pricing-card featured">
                     <div class="pricing-header">
-                        <div class="featured-badge">Best Value - Industry's Lowest Price</div>
-                        <h3>Complete ERP Solution</h3>
+                        <div class="featured-badge">Most popular · Built for Australian SMBs</div>
+                        <h3>Inventory Pro — Complete plan</h3>
                         <div class="price">
                             <span class="currency">$</span>
                             <span class="amount">50</span>
                             <span class="period">/month</span>
                         </div>
                         <div class="price-comparison">
-                            <div class="competitor-price">Competitors: $500-800/month</div>
-                            <div class="savings-highlight">Save 90-94% with us!</div>
+                            <div class="competitor-price">Competitors: $500–800/month</div>
+                            <div class="savings-highlight">Save 90–94% vs legacy ERP</div>
                         </div>
                         <div class="annual-savings">
                             <span class="annual-price">$600/year</span>
-                            <span class="savings-text">Unlimited everything</span>
+                            <span class="savings-text">Cancel anytime · No lock-in</span>
                         </div>
                     </div>
                     <ul class="pricing-features">
-                        <li><strong>✅ UNLIMITED users</strong> - No per-user fees!</li>
-                        <li><strong>✅ ALL 20+ modules included</strong> - Complete ERP suite</li>
-                        <li><strong>✅ 24/7 anytime service</strong> - Always available</li>
-                        <li><strong>✅ Full customization</strong> - Tailored to your needs</li>
-                        <li><strong>✅ Advanced analytics & reporting</strong> - Business intelligence</li>
-                        <li><strong>✅ API access & integrations</strong> - Connect everything</li>
-                        <li><strong>✅ Mobile responsive interface</strong> - Work anywhere</li>
-                        <li><strong>✅ Cloud hosting & security</strong> - Enterprise-grade</li>
-                        <li><strong>✅ Priority support</strong> - Get help when you need it</li>
-                        <li><strong>✅ Regular updates & maintenance</strong> - Always up-to-date</li>
-                        <li><strong>✅ AI-powered features</strong> - Smart automation and document intelligence</li>
-                        <li><strong>✅ Real-time data sync</strong> - Always current</li>
-                        <li><strong>✅ Audit-ready visibility</strong> - Better operational accountability</li>
+                        <li><strong>✅ UNLIMITED users</strong> — no per-user licensing</li>
+                        <li><strong>✅ ALL 20+ modules included</strong> — inventory, PO, SO, reporting, AI</li>
+                        <li><strong>✅ Multiple warehouses</strong> — inter-site transfers built in</li>
+                        <li><strong>✅ Barcode scanning</strong> — works with any USB/Bluetooth scanner</li>
+                        <li><strong>✅ Purchase orders &amp; sales orders</strong> — end-to-end workflow</li>
+                        <li><strong>✅ Full audit trail</strong> — who changed what, and when</li>
+                        <li><strong>✅ Australian support</strong> — real people in Sydney</li>
+                        <li><strong>✅ Personal onboarding</strong> — we help you import your data</li>
+                        <li><strong>✅ Inbound / outbound predictions</strong> — demand visibility</li>
+                        <li><strong>✅ AI document intelligence</strong> — OCR for PDFs, invoices, delivery dockets</li>
+                        <li><strong>✅ Mobile responsive</strong> — laptop, tablet, phone, warehouse floor</li>
+                        <li><strong>✅ Secure cloud hosting</strong> — always on, always backed up</li>
+                        <li><strong>✅ Regular product updates</strong> — included in the flat price</li>
                     </ul>
-                    <a href="#contact" class="btn btn-primary">Get Started</a>
+                    <a href="#contact" class="btn btn-primary btn-lg"><i class="fas fa-calendar-check"></i> Book a Free Demo</a>
                 </div>
             </div>
         </div>
@@ -1450,60 +1788,99 @@
         <div class="container">
             <div class="contact-content">
                 <div class="contact-info">
-                    <h2 id="contact-title">Ready to Transform Your Inventory & Supply Chain Management?</h2>
-                    <p>Get in touch with our ERP experts to learn how Inventory Pro can streamline your operations, optimize inventory tracking, and boost your business performance with our comprehensive supply chain management solution.</p>
+                    <div class="eyebrow">CONTACT</div>
+                    <h2 id="contact-title">Book a free 15-minute demo</h2>
+                    <p>Fill in the form and we'll be in touch within one business day (Sydney time). Tell us a little about how you currently manage stock — we'll tailor the demo specifically to your business.</p>
+                    <ul class="contact-benefits">
+                        <li><i class="fas fa-check-circle"></i> No sales pitch. Just software solving real problems.</li>
+                        <li><i class="fas fa-check-circle"></i> We'll show you the exact screens your team will use.</li>
+                        <li><i class="fas fa-check-circle"></i> Ask us anything — implementation, data import, pricing.</li>
+                    </ul>
                      <div class="contact-methods">
-                       
+                        <div class="contact-method contact-local">
+                            <span aria-hidden="true">🇦🇺</span>
+                            <div>
+                                <div class="contact-method-title">Australian-owned · Based in Sydney NSW</div>
+                                <div class="contact-method-sub">Support during Australian business hours</div>
+                            </div>
+                        </div>
                          <div class="contact-method">
                              <i class="fas fa-phone"></i>
-                             <span>0450137057</span>
+                             <a href="tel:+61450136057">0450 136 057</a>
+                         </div>
+                         <div class="contact-method">
+                             <i class="fas fa-envelope"></i>
+                             <a href="mailto:kevin@inventoryproapp.com.au">kevin@inventoryproapp.com.au</a>
                          </div>
                      </div>
                 </div>
                 <div class="contact-form">
-                    <form id="contactForm" action="https://formspree.io/f/mzzjdgnq" method="POST" aria-label="Contact Inventory Pro for ERP inquiries">
-                        <input type="hidden" name="_subject" value="New Inventory Pro Contact Form Submission">
+                    <form id="contactForm" action="https://formspree.io/f/mzzjdgnq" method="POST" aria-label="Book a free demo with Inventory Pro">
+                        <input type="hidden" name="_subject" value="Free demo request — Inventory Pro">
                         <input type="hidden" name="_next" value="https://inventoryproapp.com.au/?success=true">
                         <input type="hidden" name="_template" value="table">
                         <input type="hidden" name="_captcha" value="false">
-                        
-                        <div class="form-group">
-                            <label for="name" class="sr-only">Full Name</label>
-                            <input type="text" id="name" name="name" placeholder="Full Name" required autocomplete="name">
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name" class="sr-only">Full Name</label>
+                                <input type="text" id="name" name="name" placeholder="Full name" required autocomplete="name">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone" class="sr-only">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="Phone number" required autocomplete="tel">
+                            </div>
                         </div>
+
                         <div class="form-group">
-                            <label for="email" class="sr-only">Email Address</label>
-                            <input type="email" id="email" name="email" placeholder="Email Address" required autocomplete="email">
+                            <label for="email" class="sr-only">Work Email</label>
+                            <input type="email" id="email" name="email" placeholder="Work email address" required autocomplete="email">
                         </div>
-                        <div class="form-group">
-                            <label for="phone" class="sr-only">Phone Number</label>
-                            <input type="tel" id="phone" name="phone" placeholder="Phone Number" required autocomplete="tel">
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="company" class="sr-only">Company Name</label>
+                                <input type="text" id="company" name="company" placeholder="Company name" required autocomplete="organization">
+                            </div>
+                            <div class="form-group">
+                                <label for="business_type" class="sr-only">Business Type</label>
+                                <select id="business_type" name="business_type" required>
+                                    <option value="">Business type</option>
+                                    <option>Wholesaler</option>
+                                    <option>Distributor</option>
+                                    <option>Importer</option>
+                                    <option>Manufacturer</option>
+                                    <option>Trade / service business</option>
+                                    <option>Retailer with warehouse</option>
+                                    <option>Other (we'll ask in the demo)</option>
+                                </select>
+                            </div>
                         </div>
+
                         <div class="form-group">
-                            <label for="company" class="sr-only">Company Name</label>
-                            <input type="text" id="company" name="company" placeholder="Company Name" required autocomplete="organization">
-                        </div>
-                        <div class="form-group">
-                            <label for="interest" class="sr-only">Select Your Interest</label>
+                            <label for="interest" class="sr-only">What are you interested in?</label>
                             <select id="interest" name="interest" required>
-                                <option value="">Select Your Interest</option>
-                                <option value="demo">Request ERP Demo</option>
-                                <option value="pricing">Pricing Information</option>
-                                <option value="custom">Custom Supply Chain Solution</option>
-                                <option value="support">Technical Support</option>
+                                <option value="">What are you interested in?</option>
+                                <option value="demo">Book a free 15-minute demo</option>
+                                <option value="pricing">Pricing information</option>
+                                <option value="data">Importing existing data</option>
+                                <option value="custom">Custom workflow / integration</option>
+                                <option value="support">Technical support</option>
                             </select>
                         </div>
+
                         <div class="form-group">
                             <label for="message" class="sr-only">Your Message</label>
-                            <textarea id="message" name="message" placeholder="Tell us about your inventory management needs, supply chain challenges, and how we can help..." rows="4"></textarea>
+                            <textarea id="message" name="message" placeholder="Tell us briefly how you currently manage stock, and what you'd like to improve (e.g. Excel, 3 warehouses, 500 SKUs)…" rows="4"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">
-                            Send Message
+
+                        <button type="submit" class="btn btn-primary btn-lg btn-block">
+                            <i class="fas fa-calendar-check"></i> Book My Free Demo
                         </button>
                     </form>
                     <div id="success-message" class="success-message" style="display: none;">
                         <i class="fas fa-check-circle"></i>
-                        <p>Thank you! Your message has been sent successfully. We'll get back to you soon.</p>
+                        <p><strong>Thanks!</strong> Your request is in. We'll call or email you within one Australian business day to schedule your 15-minute demo.</p>
                     </div>
                 </div>
             </div>
@@ -1563,49 +1940,60 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-section">
+                <div class="footer-section footer-brand">
                     <div class="footer-logo">
                         <img src="logo.png" alt="Inventory Pro Logo" class="footer-logo-img">
                         <span>Inventory Pro</span>
                     </div>
-                    <p>Complete inventory management solution for modern businesses.</p>
+                    <p class="footer-tagline">🇦🇺 Inventory management software built for Australian small businesses.</p>
+                    <p>Simple, affordable, and supported by real people in Sydney NSW. No call centres, no 6-week implementations, no surprise bills.</p>
+                    <div class="footer-cta-mini">
+                        <a href="#contact" class="btn btn-primary btn-sm"><i class="fas fa-calendar-check"></i> Book a Free Demo</a>
+                    </div>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-linkedin"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.youtube.com/watch?v=NAJXjOxHKT8" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
                 <div class="footer-section">
                     <h4>Product</h4>
                     <ul>
                         <li><a href="#features">Features</a></li>
+                        <li><a href="#for-business">Who it's for</a></li>
+                        <li><a href="#product">Product screenshots</a></li>
                         <li><a href="#modules">Modules</a></li>
                         <li><a href="#pricing">Pricing</a></li>
-                        <li><a href="#">API Documentation</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Who it's for</h4>
+                    <ul>
+                        <li><a href="#for-business">Wholesalers</a></li>
+                        <li><a href="#for-business">Distributors</a></li>
+                        <li><a href="#for-business">Importers</a></li>
+                        <li><a href="#for-business">Manufacturers</a></li>
+                        <li><a href="#for-business">Trade &amp; service</a></li>
+                        <li><a href="#for-business">Multi-warehouse teams</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h4>Company</h4>
                     <ul>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Press</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Support</h4>
-                    <ul>
-                        <li><a href="#">Help Center</a></li>
-                        <li><a href="#">Contact Support</a></li>
-                        <li><a href="#">Training</a></li>
-                        <li><a href="#">Status</a></li>
+                        <li><span aria-hidden="true">🇦🇺</span> Australian-owned · Sydney NSW</li>
+                        <li><a href="blog/index.html">Blog</a></li>
+                        <li><a href="blog/rss.xml">RSS</a></li>
+                        <li><a href="sitemap.xml">Sitemap</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="tel:+61450136057">0450 136 057</a></li>
+                        <li><a href="mailto:kevin@inventoryproapp.com.au">kevin@inventoryproapp.com.au</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Inventory Pro. All rights reserved.</p>
+                <p>&copy; <span id="footerYear"></span> Inventory Pro · Australian-owned · All rights reserved.</p>
                 <div class="footer-links">
                     <a href="#">Privacy Policy</a>
                     <a href="#">Terms of Service</a>

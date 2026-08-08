@@ -1484,6 +1484,10 @@ document.addEventListener('DOMContentLoaded', function() {
             showFallback();
         }
     })();
+
+    // Auto-fill footer copyright year
+    const footerYear = document.getElementById('footerYear');
+    if (footerYear) footerYear.textContent = new Date().getFullYear();
 });
 
 // Email Modal Functionality
